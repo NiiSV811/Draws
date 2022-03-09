@@ -3,10 +3,10 @@ import turtle as tl
 win=tl.Screen()
 win.setup(width=700, height=900)
 win.bgcolor('black')
-win.tracer(0)
+win.title('Primer Dibujo a mi primer profesor de Programación')
 win.colormode(255)
 pencil=tl.Turtle()
-
+pencil.speed(40)
 position=[]
 for i in range(151):
     pencil.pencolor(randint(0,255),randint(0,255),randint(0,255))
@@ -37,6 +37,7 @@ for pxy in range(len(position)):
 
 name=tl.Turtle()
 name.pu()
+name.hideturtle()
 name.goto(-300,-400)
 name.color('#ffffff')
 name.write('Cristian Palta', font='consolas 15')
